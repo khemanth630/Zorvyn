@@ -1,0 +1,179 @@
+﻿  console.log
+    [dotenv@17.3.1] injecting env (3) from .env -- tip: ≡ƒöÉ prevent building .env in docker: https://dotenvx.com/prebuild
+
+      at _log (node_modules/dotenv/lib/main.js:139:11)
+
+  console.log
+    [dotenv@17.3.1] injecting env (0) from .env -- tip: ΓÜí∩╕Å secrets for agents: https://dotenvx.com/as2
+
+      at _log (node_modules/dotenv/lib/main.js:139:11)
+
+node.exe : PASS 
+tests/api.test.js
+At C:\Users\heman\AppData\
+Roaming\npm\npx.ps1:24 
+char:5
++     & "node$exe"  "$base
+dir/node_modules/npm/bin/n
+px-cli.js" $args
++     ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (P  
+  ASS tests/api.test.js   
+ :String) [], RemoteEx    
+ception
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+  Auth Endpoints
+    ΓêÜ POST 
+/api/auth/register - 
+should register a new 
+user (269 ms)
+    ΓêÜ POST 
+/api/auth/register - 
+should fail with 
+duplicate email (11 ms)
+    ΓêÜ POST 
+/api/auth/register - 
+should fail with invalid 
+email (9 ms)
+    ΓêÜ POST 
+/api/auth/register - 
+should fail with missing 
+fields (8 ms)
+    ΓêÜ POST 
+/api/auth/login - should 
+login successfully (255 
+ms)
+    ΓêÜ POST 
+/api/auth/login - should 
+fail with wrong password 
+(256 ms)
+    ΓêÜ GET /api/auth/me 
+- should return current 
+user profile (14 ms)
+    ΓêÜ GET /api/auth/me 
+- should fail without 
+token (7 ms)
+  Financial Records 
+Endpoints
+    ΓêÜ POST /api/records 
+- admin can create a 
+record (20 ms)
+    ΓêÜ POST /api/records 
+- viewer cannot create a 
+record (11 ms)
+    ΓêÜ POST /api/records 
+- analyst cannot create a 
+record (10 ms)
+    ΓêÜ POST /api/records 
+- should fail with 
+invalid data (9 ms)
+    ΓêÜ POST /api/records 
+- create additional 
+records (44 ms)
+    ΓêÜ GET /api/records 
+- all roles can view 
+records (39 ms)
+    ΓêÜ GET 
+/api/records?type=income 
+- filter by type (17 ms)
+    ΓêÜ GET /api/records?c
+ategory=Rent - filter by 
+category (18 ms)
+    ΓêÜ GET /api/records?s
+tartDate=2024-04-01&endDat
+e=2024-04-30 - filter by 
+date range (14 ms)
+    ΓêÜ GET 
+/api/records/:id - get 
+single record (12 ms)
+    ΓêÜ GET 
+/api/records/:id - should 
+return 404 for 
+non-existent (9 ms)
+    ΓêÜ PUT 
+/api/records/:id - admin 
+can update a record (12 
+ms)
+    ΓêÜ PUT 
+/api/records/:id - viewer 
+cannot update (9 ms)
+    ΓêÜ DELETE 
+/api/records/:id - admin 
+can soft delete (31 ms)
+    ΓêÜ DELETE 
+/api/records/:id - viewer 
+cannot delete (9 ms)
+  Dashboard Endpoints
+    ΓêÜ GET 
+/api/dashboard/summary - 
+analyst can access (16 ms)
+    ΓêÜ GET 
+/api/dashboard/summary - 
+viewer cannot access (10 
+ms)
+    ΓêÜ GET /api/dashboard
+/category-summary - 
+returns category 
+breakdown (9 ms)
+    ΓêÜ GET 
+/api/dashboard/trends - 
+returns monthly trends 
+(13 ms)
+    ΓêÜ GET 
+/api/dashboard/recent - 
+all roles can access (11 
+ms)
+  User Management 
+Endpoints
+    ΓêÜ GET /api/users - 
+admin can list users (15 
+ms)
+    ΓêÜ GET /api/users - 
+viewer cannot list users 
+(10 ms)
+    ΓêÜ GET /api/users - 
+analyst cannot list users 
+(10 ms)
+    ΓêÜ GET 
+/api/users/:id - admin 
+can get user details (11 
+ms)
+    ΓêÜ PATCH 
+/api/users/:id/role - 
+admin can update role (25 
+ms)
+    ΓêÜ PATCH 
+/api/users/:id/status - 
+admin can deactivate user 
+(24 ms)
+    ΓêÜ PATCH 
+/api/users/:id/role - 
+should reject invalid 
+role (9 ms)
+    ΓêÜ DELETE 
+/api/users/:id - admin 
+cannot delete self (9 ms)
+  Error Handling
+    ΓêÜ Should return 404 
+for unknown routes (6 ms)
+    ΓêÜ Should return 401 
+for protected routes 
+without token (6 ms)
+    ΓêÜ Should return 401 
+for invalid token (8 ms)
+    ΓêÜ Health check 
+should work (6 ms)
+
+Test Suites: 1 passed, 1 
+total
+Tests:       40 passed, 
+40 total
+Snapshots:   0 total
+Time:        3.141 s
+Ran all test suites.
